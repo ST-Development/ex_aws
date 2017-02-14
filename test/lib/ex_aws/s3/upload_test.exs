@@ -28,7 +28,7 @@ defmodule ExAws.S3.UploadTest do
         ExAws.S3.put_object("sergey-test", "some file name.txt", file)
         |> ExAws.request!
 
-        assert status_code == 200
+      assert status_code == 200
     end
   end
 
