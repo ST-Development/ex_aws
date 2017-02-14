@@ -24,7 +24,7 @@ defmodule ExAws.S3.UploadTest do
     end
 
     test "uploading a file with a name separated by spaces" do
-      {status_code: status_code} =
+      %{status_code: status_code} =
         ExAws.S3.put_object("sergey-test", "some file name.txt", "data")
         |> ExAws.request!
 
